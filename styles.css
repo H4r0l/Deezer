@@ -76,26 +76,6 @@ body {
 .botones-2 {
     background-color: rgba(0, 0, 0, 0);
     border-bottom-color: rgb(3, 96, 138);
-    border-bottom-left-radius: 35px;
-    border-bottom-right-radius: 35px;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-image-outset: 0;
-    border-image-repeat: stretch;
-    border-image-slice: 100%;
-    border-image-source: none;
-    border-image-width: 1;
-    border-left-color: rgb(3, 96, 138);
-    border-left-style: solid;
-    border-left-width: 2px;
-    border-right-color: rgb(3, 96, 138);
-    border-right-style: solid;
-    border-right-width: 2px;
-    border-top-color: rgb(3, 96, 138);
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
-    border-top-style: solid;
-    border-top-width: 2px;
     box-sizing: border-box;
     color: rgb(3, 96, 138);
     cursor: pointer;
@@ -171,7 +151,6 @@ h3 {
 }
 .entrada {
     color: rgb(82, 82, 93);
-    direction: ltr;
     font-family: Mabry, sans-serif;
     font-size: 12px;
     line-height: 15.9667px;
@@ -180,8 +159,6 @@ h3 {
     margin-right: 375px;
     margin-top: 0px;
     max-width: 400px;
-    position: relative;
-    text-align: center;
 }
 .nose {
     background-clip: padding-box;
@@ -234,4 +211,125 @@ h3 {
     text-decoration-line: none;
     text-decoration-style: solid;
     text-decoration-thickness: auto
+}
+.Informacion{
+    color: rgb(82, 82, 93);
+    direction: ltr;
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    line-height: 15.9667px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 120px
+}
+.contenedor{
+    box-sizing: border-box;
+    color: rgb(82, 82, 93);
+    direction: ltr;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    justify-content: center;
+    position: relative;
+    line-height: 15.9667px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.texto-info {
+    color: rgb(82, 82, 93);
+    direction: ltr;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    line-height: 15.9667px;
+    margin-bottom: 0px;
+    margin-left: 42px;
+    margin-right: 42px;
+    margin-top: 0px;
+    width: 26%;
+}
+.heading-2{
+    color: rgb(0, 0, 0);
+    padding-right: 220px;
+    padding-left: 220px;
+    text-align: center;
+    font-family: Mabry, sans-serif;
+    letter-spacing: -1px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    line-height: 80px;
+    width: 75%;
+}
+.heading-3 {
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.parrafo-2 {
+    color: rgb(129,129,129);
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 22px;
+    font-family: Mabry, sans-serif;
+}
+.parrafo-3 {
+    color: rgb(129,129,129);
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 26px;
+    font-family: Mabry, sans-serif;
+    text-align: center;
+    font-family: Mabry, sans-serif;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+strong {
+    color: black;
+}
+.offline {
+    color: rgb(82, 82, 93);
+    direction: ltr;
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    padding-top: 120px;
+    padding-bottom: 200px;
+}
+.info-offline{
+    margin-top: 290px;
+    width: 600px;
+    display: inline;
+}
+.img-1{
+    justify-content: center;
+    width: 100%;
+}
+.img-2 {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: inline;
+    height: 921px;
+    width: 548px;
+}
+.cover-1{
+    background-color: transparent;
+    border-radius: 50%;
+    background-image: url(https://e-cdn-files.dzcdn.net/cache/slash/images/backstage/offers/premium/cover-2.b80474d46fbc0ca2127da50b8694cf1e.jpg);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
