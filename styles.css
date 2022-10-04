@@ -7,11 +7,15 @@
     font-size: 30px;
     height: 80px;
     border-bottom: 2px solid #eee;
+    display: flex;
 }
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto',sans-serif;
+}
+:root {
+    overflow-x: hidden;
 }
 .logo {
     background-repeat: no-repeat;
@@ -31,6 +35,11 @@ body {
     outline: 0 none;
     font-weight: 700;
 }
+.contenedor-botones {
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+}
 .menu {
     color: rgb(82, 82, 93);
     direction: ltr;
@@ -39,53 +48,80 @@ body {
     font-size: 12px;
     height: 80px;
     line-height: 15.9667px;
-    padding-right: 20px;
     text-align: right;
     vertical-align: middle;
-    width: 654.25px
+    padding-left: 100vh;
 }
 .menu-2 {
-    padding-right: 122px;
-    white-space: nowrap;
+    color: rgb(82, 82, 93);
+    direction: ltr;
     display: table-cell;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
     height: 80px;
+    line-height: 15.9667px;
+    padding-right: 122px;
     vertical-align: middle;
+    white-space: nowrap;
+    text-align: right;
 }
 .botones-1 {
-    color: rgb(50, 50, 61);
-    cursor: pointer;
+    color: rgb(82, 82, 93);
+    background: transparent;
     direction: ltr;
-    font-family: Roboto, sans-serif;
+    display: inline-block;
+    font-family: Mabry, sans-serif;
     font-size: 20px;
-    font-weight: 700;
-    line-height: 80px;
+    line-height: 15.9667px;
     list-style-image: none;
     list-style-position: outside;
     list-style-type: none;
-    outline-color: rgb(50, 50, 61);
-    outline-style: none;
-    outline-width: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
     text-align: right;
-    text-decoration-color: rgb(50, 50, 61);
-    text-decoration-line: none;
-    text-decoration-style: solid;
-    display: table-cell;
-    vertical-align: middle;
-    text-decoration-thickness: auto
+    vertical-align: top
 }
 .botones-2 {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(3, 96, 138);
     border-bottom-color: rgb(3, 96, 138);
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(3, 96, 138);
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-right-color: rgb(3, 96, 138);
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-top-color: rgb(3, 96, 138);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-top-style: solid;
+    border-top-width: 2px;
     box-sizing: border-box;
-    color: rgb(3, 96, 138);
+    color: white;
     cursor: pointer;
     direction: ltr;
     display: inline-block;
-    font-family: Roboto, sans-serif;
+    font-family: Mabry, sans-serif;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 19.95px;
     outline-color: rgb(3, 96, 138);
+    text-decoration-color: rgb(3, 96, 138);
+    white-space: nowrap;
     outline-style: none;
     outline-width: 0px;
     padding-bottom: 8px;
@@ -93,9 +129,7 @@ body {
     padding-right: 24px;
     padding-top: 8px;
     position: relative;
-    text-align: center;
-    text-decoration-color: rgb(3, 96, 138);
-    white-space: nowrap
+    text-align: center
 }
 .heading {
     background-attachment: scroll;
@@ -151,6 +185,7 @@ h3 {
 }
 .entrada {
     color: rgb(82, 82, 93);
+    direction: ltr;
     font-family: Mabry, sans-serif;
     font-size: 12px;
     line-height: 15.9667px;
@@ -158,15 +193,14 @@ h3 {
     margin-left: 375px;
     margin-right: 375px;
     margin-top: 0px;
-    max-width: 400px;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
 }
-.nose {
+.input-correo {
     background-clip: padding-box;
     background-color: rgb(255, 255, 255);
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
+    border-radius: 100px;
     box-sizing: border-box;
     display: inline-block;
     font-family: Open Sans, Arial, sans-serif;
@@ -180,7 +214,12 @@ h3 {
     padding-top: 10px;
     text-align: start;
     vertical-align: middle;
-    width: 400px
+    width: 400px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    border: 10px;
 }
 .parrafo {
     color: #fff;
@@ -191,7 +230,7 @@ h3 {
     margin: 30px auto 0;
     margin-bottom: 20px;
     text-align: center;
-    width: 310px;
+    width: 100%;
 }
 .etiqueta {
     color: rgb(255, 255, 255);
@@ -232,8 +271,6 @@ h3 {
     flex-wrap: wrap;
     font-family: Roboto, sans-serif;
     font-size: 12px;
-    justify-content: center;
-    position: relative;
     line-height: 15.9667px;
     margin-left: auto;
     margin-right: auto;
@@ -283,10 +320,11 @@ h3 {
 }
 .parrafo-3 {
     color: rgb(129,129,129);
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 40px;
-    line-height: 26px;
+    line-height: 22px;
     font-family: Mabry, sans-serif;
+    padding-left: 280px;
     text-align: center;
     font-family: Mabry, sans-serif;
     margin-top: 0px;
@@ -305,6 +343,7 @@ strong {
     font-size: 12px;
     padding-top: 120px;
     padding-bottom: 200px;
+    text-align: center;
 }
 .info-offline{
     margin-top: 290px;
@@ -323,13 +362,4 @@ strong {
     display: inline;
     height: 921px;
     width: 548px;
-}
-.cover-1{
-    background-color: transparent;
-    border-radius: 50%;
-    background-image: url(https://e-cdn-files.dzcdn.net/cache/slash/images/backstage/offers/premium/cover-2.b80474d46fbc0ca2127da50b8694cf1e.jpg);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
